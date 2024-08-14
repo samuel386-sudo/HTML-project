@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion - Tise Online Store</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #990099;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffccff;
+        }
+
+        .hero {
+            background-image: url('fashion-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .product-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .product-item h3 {
+            margin: 15px 0;
+            font-size: 20px;
+            color: #660066;
+        }
+
+        .product-item p {
+            font-size: 18px;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+        .product-item button {
+            background-color: #660066;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .product-item button:hover {
+            background-color: #550055;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Untitled-2 homepage.html">Home</a></li>
+                <li><a href="Untitled-3 productpage.html">Products</a></li>
+                <li><a href="Untitled-5 contactpage.html">Contact</a></li>
+                <li><a href="Untitled-4 about us page.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Fashion</h1>
+        <p>Explore the latest trends in fashion and style.</p>
+    </section>
+    
+    <!-- Main Content -->
+    <main>
+        <h2>Our Top Fashion Picks</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="dress.jpg" alt="Dress">
+                <h3>Elegant Evening Dress</h3>
+                <p>$129.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="sneakers.jpg" alt="Sneakers">
+                <h3>Sporty Sneakers</h3>
+                <p>$79.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="handbag.jpg" alt="Handbag">
+                <h3>Leather Handbag</h3>
+                <p>$199.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tise Online Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

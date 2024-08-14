@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toys - Tise Online Store</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #161616;
+            color: #333;
+        }
+
+        header {
+            background-color: #141313;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #edecec;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffa07a;
+        }
+
+        .hero {
+            background-image: url('toys-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-weight: 600;
+            color: #ece2e2;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-item {
+            background-color: #e6dada;
+            border: 1px solid #f0e3e3;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .product-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .product-item h3 {
+            margin: 15px 0;
+            font-size: 20px;
+            color: #776d69;
+        }
+
+        .product-item p {
+            font-size: 18px;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+        .product-item button {
+            background-color: #6c5e58;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .product-item button:hover {
+            background-color: #7c706b;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Untitled-2 homepage.html">Home</a></li>
+                <li><a href="Untitled-3 productpage.html">Products</a></li>
+                <li><a href="Untitled-5 contactpage.html">Contact</a></li>
+                <li><a href="Untitled-4 about us page.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Toys</h1>
+        <p>Find the perfect toy for every child, from toddlers to teens.</p>
+    </section>
+    
+    <!-- Main Content -->
+    <main>
+        <h2>Popular Toys</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="action-figure.jpg" alt="Action Figure">
+                <h3>Superhero Action Figure</h3>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="lego-set.jpg" alt="LEGO Set">
+                <h3>LEGO Building Set</h3>
+                <p>$59.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="dollhouse.jpg" alt="Dollhouse">
+                <h3>Luxury Dollhouse</h3>
+                <p>$129.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tise Online Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
